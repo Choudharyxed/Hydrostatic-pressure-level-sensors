@@ -29,6 +29,10 @@ In this project, the sending data can be done by two applications:
 
 The sending data is an interger value between 0 and 100 and indicated the **percentage of the water level** in the tank. The value is published in the queue '**iot/waterlevel**' of **RabbitMQ**.
 
-When a value issued in the queue, a function on Nuclio created with the name **waterlevelsensor** is triggered, which then processes the issued value. This function check if the received value is low set for the water level in tank which is **&le;10%** and if so, it will publish a new message in the queue '**iot/alerts**', otherwise it will log in the queue of **iot/logs**.
+When a value issued in the queue, a function on Nuclio created with the name **waterlevelsensor** is triggered, which then processes the issued value. This function check if the received value is low set for the water level in tank which is **&le;10%** and if so, it will publish a new message in the queue '**iot/alerts**', otherwise it will log in the queue of '**iot/logs**'.
 
+
+**Bot_Telegram.js** intercept the publications in **iot/alerts** and a notification message is sent to the user via a **Telegram Bot**
+
+After receiving the notification, the user have to choose most likely option from the given options mentioned earlier.
 
