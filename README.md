@@ -49,3 +49,25 @@ After receiving the notification, the user have to choose most likely option fro
 
 ## Building Project
 
+**This project require the installation of Node.js and Docker**
+
+After the installation of Docker, start Docker to run **RabbitMQ** and **Nuclio** with the below commands:
+
+- **Docker RabbitMQ**:
+
+  ```sh
+  docker run -p 9000:15672  -p 1883:1883 -p 5672:5672  cyrilix/rabbitmq-mqtt
+  ```
+
+- **Docker Nuclio**:
+
+  ```sh
+  docker run -p 8070:8070 -v /var/run/docker.sock:/var/run/docker.sock -v /tmp:/tmp nuclio/dashboard:stable-amd64
+  ```
+  **Update and deploy functions steps**:
+  
+  - Type '**localhost:8070**' on your browser to open the homepage of Nuclio.
+  - Create new project and call it **Water Level Detection**.
+  - Press '**Create function**', '**Import**' and upload the two functions .yaml files that are in the **yaml_functions** folder.
+  - In both .yaml funstion files, **change the already present IP with your computer present IP address**.
+  - Press **'Deploy'**.
