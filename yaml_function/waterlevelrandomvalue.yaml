@@ -1,0 +1,22 @@
+metadata:
+  name: waterlevelrandomvalue
+  labels:
+    nuclio.io/project-name: 2a68545e-5920-4272-a683-894f3c2c8aad
+spec:
+  handler: "main:handler"
+  runtime: nodejs
+  resources: {}
+  image: "nuclio/processor-waterlevelrandomvalue:latest"
+  minReplicas: 1
+  maxReplicas: 1
+  targetCPU: 75
+  build:
+    functionSourceCode: dmFyIG1xdHQgPSByZXF1aXJlKCJtcXR0Iik7DQp2YXIgdXJsID0gcmVxdWlyZSgidXJsIik7DQoNCnZhciBtcXR0X3VybCA9IHVybC5wYXJzZSgNCiAgICBwcm9jZXNzLmVudi5DTE9VREFNUVBfTVFUVF9VUkwgfHwNCiAgICAibXF0dDovL2d1ZXN0Omd1ZXN0QDE3Mi4xOC4wLjI6MTg4MyINCik7DQp2YXIgYXV0aCA9IChtcXR0X3VybC5hdXRoIHx8ICI6Iikuc3BsaXQoIjoiKTsNCnZhciB1cmwgPSAibXF0dDovLyIgKyBtcXR0X3VybC5ob3N0Ow0KdmFyIG9wdGlvbnMgPSB7DQogIHBvcnQ6IG1xdHRfdXJsLnBvcnQsDQogIGNsaWVudElkOiAibXF0dGpzXyIgKyBNYXRoLnJhbmRvbSgpLnRvU3RyaW5nKDE2KS5zdWJzdHIoMiwgOCksDQogIHVzZXJuYW1lOiBhdXRoWzBdLA0KICBwYXNzd29yZDogYXV0aFsxXSwNCn07DQoNCmV4cG9ydHMuaGFuZGxlciA9IGZ1bmN0aW9uIChjb250ZXh0LCBldmVudCkgew0KICB2YXIgY2xpZW50ID0gbXF0dC5jb25uZWN0KHVybCwgb3B0aW9ucyk7DQoNCiAgY2xpZW50Lm9uKCJjb25uZWN0IiwgZnVuY3Rpb24gKCkgew0KICAgIHZhciBsZXZlbCA9IE1hdGguZmxvb3IoTWF0aC5yYW5kb20oKSAqIDIwKS50b1N0cmluZygpOw0KDQogICAgY2xpZW50LnB1Ymxpc2goImlvdC93YXRlcmxldmVsIiwgbGV2ZWwsIGZ1bmN0aW9uICgpIHsNCiAgICAgIGNsaWVudC5lbmQoKTsNCiAgICAgIGNvbnRleHQuY2FsbGJhY2soIlNlbnQgIiArIGxldmVsKTsNCiAgICB9KTsNCiAgfSk7DQp9Ow0K
+    commands:
+      - 'npm install mqtt'
+    runtimeAttributes:
+      repositories: []
+    codeEntryType: sourceCode
+  platform: {}
+  readinessTimeoutSeconds: 60
+  version: 1
