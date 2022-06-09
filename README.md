@@ -100,8 +100,12 @@ After all these steps, you are able to send a value using both **waterlevelrando
 Following videos demonstrate the value send from the MQTT client via smartphone and the notification received on Telegram bot.
 
 **Sending random value using MQTT client via smartphone**
+
+
 https://user-images.githubusercontent.com/107116860/172759260-73674fc8-1587-4a75-b64c-bac17d2f2f78.mp4
 
 **Notification on Telegram via Telegram bot**
+
+
 https://user-images.githubusercontent.com/107116860/172759375-5352a00f-2105-4876-9afb-b9bcce52d495.mp4
 
