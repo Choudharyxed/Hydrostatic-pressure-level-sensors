@@ -51,19 +51,18 @@ After receiving the notification, the user have to choose most likely option fro
 
 **This project require the installation of Node.js and Docker**
 
-After the installation of Docker, start Docker to run **RabbitMQ** and **Nuclio** with the below commands:
+After the installation of Docker, start Docker to run **RabbitMQ** and **Nuclio** with the below commands via terminal or CMD:
+
 
 - **Docker RabbitMQ**:
 
-  ```sh
   docker run -p 9000:15672  -p 1883:1883 -p 5672:5672  cyrilix/rabbitmq-mqtt
-  ```
+ 
 
 - **Docker Nuclio**:
 
-  ```sh
   docker run -p 8070:8070 -v /var/run/docker.sock:/var/run/docker.sock -v /tmp:/tmp nuclio/dashboard:stable-amd64
-  ```
+  
   **Update and deploy functions steps**:
   
   - Type '**localhost:8070**' on your browser to open the homepage of Nuclio.
@@ -71,3 +70,22 @@ After the installation of Docker, start Docker to run **RabbitMQ** and **Nuclio*
   - Press '**Create function**', '**Import**' and upload the two functions .yaml files that are in the **yaml_functions** folder.
   - In both .yaml funstion files, **change the already present IP with your computer present IP address**.
   - Press **'Deploy'**.
+
+- **Create Telegram Bot**:
+
+  - Open Telegram and search for [BotFather].
+  - Press **start** and type **/newbot**.
+  - Give it a **name** and a **unique id**.
+  - Copy and paste the **Token** that BotFather gave you in the **Telegraf constructor** in **Bot_Telegram.js**.
+
+- **Install all dependencies, start Telegram Bot's Server and start Logger**:
+- 
+Open two terminal or CMD and type the following commands on each:
+
+**node Bot_Telegram.js**
+
+and on second one:
+
+**node logger.js**
+
+-**Note: Specify the location of the folder in terminal or CMD where the files or present and then run the command.**
