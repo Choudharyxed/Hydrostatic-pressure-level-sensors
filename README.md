@@ -102,10 +102,18 @@ Following videos demonstrate the value send from the MQTT client via smartphone 
 **Sending random value using MQTT client via smartphone**
 
 
-https://user-images.githubusercontent.com/107116860/172759260-73674fc8-1587-4a75-b64c-bac17d2f2f78.mp4
+
+https://user-images.githubusercontent.com/107116860/172761928-db04f00b-e027-4cf8-a13e-47c8cc7c985d.mp4
+
+
+
 
 **Notification on Telegram via Telegram bot**
 
 
-https://user-images.githubusercontent.com/107116860/172759375-5352a00f-2105-4876-9afb-b9bcce52d495.mp4
+
+
+https://user-images.githubusercontent.com/107116860/172761996-45e996b6-4fa0-43e7-9999-8fcd96e2612f.mp4
+
+
 
