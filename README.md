@@ -37,3 +37,12 @@ When a value issued in the queue, a function on Nuclio created with the name **w
 After receiving the notification, the user have to choose most likely option from the given options mentioned earlier.
 ![architecture](https://user-images.githubusercontent.com/107116860/172752884-b2474a55-f504-422c-83f2-edae207d1d25.jpeg)
 
+## Project structure
+
+- node.js/
+  - **Bot_Telegram.js**: Bi-directional communication with Telegram bot.
+  - **Alert_logger.js**: Publish both when the water level is not too low and the user response from the bot.
+
+- yaml_function/
+
+
