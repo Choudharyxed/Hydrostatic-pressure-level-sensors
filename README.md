@@ -79,7 +79,7 @@ After the installation of Docker, start Docker to run **RabbitMQ** and **Nuclio*
   - Copy and paste the **Token** that BotFather gave you in the **Telegraf constructor** in **Bot_Telegram.js**.
 
 - **Install all dependencies, start Telegram Bot's Server and start Logger**:
-- 
+
 Open two terminal or CMD and type the following commands on each:
 
 **node Bot_Telegram.js**
@@ -89,3 +89,14 @@ and on second one:
 **node logger.js**
 
 -**Note: Specify the location of the folder in terminal or CMD where the files or present and then run the command.**
+
+- **Start Telegram Bot Client**:
+
+Run the bot created on Telegram.
+After all these steps, you are able to send a value using both **waterlevelrandomvalue** on Nuclio and an **MQTT client** from smartphone and if this provided value is **less than or equal to 10**, user will be notified on the Telegram bot and asked to choose the option prefered.
+
+## Demo
+
+Following videos demonstrate the value send from the MQTT client via smartphone and the notification received on Telegram bot.
+
+**Sending random value using MQTT client via smartphone**
