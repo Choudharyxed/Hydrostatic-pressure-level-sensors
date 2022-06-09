@@ -5,7 +5,7 @@ Hydrostatic pressure level sensors are submersible sensors used for measuring th
 [- Introduction](#Introduction): Introduction to the Project\
 [- Architecture](#Architecture): Architecture of the Project\
 [- Project structure](#Project-structure): Based structure of the Project\
-[- Getting started](#Getting-started): Building the Project
+[- Building project](#Building-project): Building the Project
 
 ## Introduction
 
@@ -44,5 +44,8 @@ After receiving the notification, the user have to choose most likely option fro
   - **Alert_logger.js**: Publish both when the water level is not too low and the user response from the bot.
 
 - yaml_function/
+  - **waterlevelrandomvalue.yaml**: Sends a random value to the queue iot/waterlevel.
+  - **waterlevelsensor.yaml**: Process received random values and notify the user or log data.
 
+## Building Project
 
